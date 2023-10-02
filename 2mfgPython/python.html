@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Emotion Based Movie Recommendation App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div style="display: flex; justify-content: center; align-items: center;">
+					<h1><a href="index.html" class="title">Projects</a></h1>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Emotion Based Movie Recommendation App</h1>
+							<p><em>January 2023 - April 2023</em></p>
+    <p><em>Arizona State University, Tempe, Arizona</em></p>
+							<span class="image fit"><img src="py.png" alt="" /></span>
+							<li>This project can be accessed through this Google Drive link: <a href="https://drive.google.com/drive/folders/1Cj18NIDFa6ZjwDfNhiZJ18Ji7sDADFUw?usp=sharing">Google Drive Link</a></li>
+							<li>Please refer to this video link for more information on the project: <a href="https://www.youtube.com/watch?v=HECYza7Yw1E"><span style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); font-weight: bold;">Project Video Link</span></a></li>
+							<li>Before proceeding, download all the files from the drive.</li>
+							<li>Run the <code>MFG_Project_Main_Code.py</code> file and refer to the video link below for guidance before running the code.</li>
+							<li>The <code>MFG_Project_Main_Code.py</code> file runs two Python files as applications.</li>
+							<li>Upon running the file, the <code>MFG598_Emotion_Detection.py</code> code opens as app1, which captures an image of your current emotional state and saves it as a <code>photo.png</code> file.</li>
+							<li>The saved photo is then used to predict the emotion using the <code>ferNet.h5</code> model, which uses KNN to predict emotion by comparing the facial photos in the train folder.</li>
+							<li>The <code>ferNet.h5</code> model is a well-known model trained from FER2013 (Facial Expression Recognition 2013 Dataset).</li>
+							<li>The FER2013 contains approximately 30,000 facial RGB images of different expressions, with a size restricted to 48×48 pixels, and the primary labels of the dataset can be divided into seven types: 0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral.</li>
+							<li>The predicted emotion is saved in the <code>emotion_out.txt</code> file.</li>
+							<li>Using the saved <code>emotion_out.txt</code> file, the second code, <code>MFG598_Movie_Recommend_Emotion_Based.py</code>, is opened as app2.</li>
+							<li>Seven CSV files have been created for movie recommendations based on specific emotions, namely anger, disgust, fear, happiness, neutral, sadness, and surprise. These files contain movie names, genres, and ratings for the respective emotions, and are based on research papers.</li>
+							<li>Based on the saved text file, the app will open the respective <code>emotion.csv</code> file and display the movie recommendation for the current emotion. If the user doesn't like the recommended movie, they can click the next button, which will recommend another movie a thousand times.</li>
+							<li>If the user likes the movie, they can press the movie button, which saves the movie name as <code>selected_movie.txt</code>.</li>
+							<li>In the future, if you wish to watch a movie similar to the recommended one, I have created another app that recommends movies based on the plot and content of the recommended movie, using the <code>tmdb_5000_credits.csv</code> and <code>tmdb_5000_movies.csv</code> files.</li>
+							<li>In the <code>MFG598_Movie_Recommend_Content_Based.py</code> app, the code first prompts the user to enter the movie name (case-sensitive). Based on the information provided, the app uses a TfidfVectorizer to convert the movie overviews into vectors and calculates the cosine similarity between them.</li>
+							<li>It then creates a mapping between movie titles and their corresponding indices in the dataset and finds the movies with the highest cosine similarity scores to the input movie title.</li>
+							<li>The app displays the top 10 recommended movies and allows the user to load more recommendations by clicking a button.</li>
+							<li>If the input movie name is not available in <code>tmdb_5000_movies.csv</code>, the app will prompt the user to input a different movie.</li>
+							<li>To close all the applications, press the Esc key.</li>
+							<h3>Conclusion</h3>
+								<p>Our project combines emotion detection and movie recommendations to offer a unique and personalized entertainment experience. Through facial expression analysis using the FER2013 dataset and ferNet.h5 model, we accurately predict emotions and recommend movies that resonate with the user's feelings. Additionally, our content-based movie recommendation system utilizes natural language processing to suggest films based on plot and content, providing a holistic approach to movie recommendations. Our project showcases the power of machine learning and data-driven solutions in enhancing everyday entertainment choices, aiming to offer users an immersive and tailored movie-watching experience.</p>
+								<p>Check out the project here <a href="https://github.com/KirthikRoshan/Emotion-Based-Movie-Recommendation-App">GitHub</a> for dataset, code and more.</p>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; KirthikRoshanNagaraj. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>			
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

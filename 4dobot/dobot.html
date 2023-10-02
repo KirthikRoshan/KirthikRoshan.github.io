@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dobot Projects</title>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div style="display: flex; justify-content: center; align-items: center;">
+				<h1><a href="index.html" class="title">Projects</a></h1>
+			</div>
+							
+		</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Dobot Projects</h1>
+							<p><em>August 2023</em></p>
+    <p><em>Arizona State University, Tempe, Arizona</em></p>
+							<h2>Project Description: Teaching Dobot to Write "CIM"</h2>
+							<span class="image fit"><img src="cim main.png" alt="" /></span>
+
+
+							<h3>Objective:</h3>
+							<p>The primary objective of this project was to instruct the Dobot robotic arm in writing the letters "CIM." This entailed a two-step process. Initially, we manually wrote the word "CIM" in pencil on the Dobot Template. Subsequently, we employed the Dobot with a pen end effector to replicate the word "CIM" by guiding the robot through a series of straight-line movements. It was crucial to raise the pen between letters and position the robot away from the paper upon task completion.</p>
+						
+							<h3>Recording and Teaching:</h3>
+							<p>In this project, a module was utilized to record and educate the robot regarding the specific points it needed to visit to write "CIM." Recorded points were determined using the lock button on the robot's arm, while teaching points involved inputting XYZ coordinates directly, without physically moving the robot. This approach, commonly used in industry, offered efficiency and speed, particularly when coordinates or point relationships were well-defined.</p>
+							<p>Click the <a href="https://youtu.be/Qm3hefWPP-g"><span style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); font-weight: bold;">Youtube</span></a> logo for this project video.</p>
+							<h2>Project Description: Dobot Pick and Place Automation</h2>
+							<span class="image fit"><img src="dobotPick.png" alt="" /></span>
+
+						
+							<p>In this project, I developed an automated pick and place system using a Dobot robotic arm. The primary objective was to create a precise and efficient system capable of accurately picking up and placing objects. Here's an overview of the project:</p>
+						
+							<h3>1. Gripper Attachment:</h3>
+							<p>Initially, the gripper was securely attached to the rotational servo of the Dobot robotic arm, enabling it to grasp objects effectively.</p>
+						
+							<h3>2. Robot Setup:</h3>
+							<p>Following gripper attachment, the robotic arm was positioned on the robot platform, and all necessary connections were made to ensure smooth functionality.</p>
+						
+							<h3>3. Field Diagram:</h3>
+							<p>To facilitate the pick and place operation, a field diagram was utilized as a reference, featuring designated areas for object handling.</p>
+						
+							<h3>4. Recording Positions:</h3>
+							<p>A sequence of precise positions was programmed into the Dobot robotic arm's control interface to enable the pick and place operations. The following positions were recorded:</p>
+						
+							<ul>
+								<li><strong>Home:</strong> The initial starting position.</li>
+								<li><strong>Above Pick:</strong> Positioned above the object to be picked.</li>
+								<li><strong>At Pick:</strong> The location where the gripper grasped the object.</li>
+								<li><strong>Above Pick:</strong> Returning to the above pick position.</li>
+								<li><strong>Above Place:</strong> Positioned above the target placement location.</li>
+								<li><strong>At Place:</strong> The position where the gripper released the object.</li>
+								<li><strong>Above Place:</strong> Returning to the above place position.</li>
+								<li><strong>Home:</strong> Returning to the initial starting position.</li>
+							</ul>
+						
+							<p>By recording these key positions, the Dobot robotic arm efficiently executed the pick and place task, demonstrating its precision and potential for automation across various applications.</p>
+							<p>Click the <a href="https://www.youtube.com/shorts/AXhdLxXWSGw"><span style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); font-weight: bold;">Youtube</span></a> logo for this project video.</p>
+							<h2>Project Description: Dobot Picking, Stacking, and Destacking Automation</h2>
+							<span class="image fit"><img src="dobotStack.png" alt="" /></span>
+
+						
+							<p>In this project, I designed an automation system employing a Dobot robotic arm for intricate tasks, including picking, stacking, and destacking objects. The primary goal was to create a precise and efficient system capable of stacking objects neatly. Here's an outline of the project:</p>
+						
+							<h3>1. Gripper Attachment:</h3>
+							<p>Initially, the gripper was securely attached to the rotational servo of the Dobot robotic arm, enabling effective object handling.</p>
+						
+							<h3>2. Robot Setup:</h3>
+							<p>Subsequently, the robotic arm was securely positioned on the robot platform, with all necessary connections made to ensure seamless operation.</p>
+						
+							<h3>3. Field Diagram:</h3>
+							<p>A field diagram served as a reference for the arm's movements, featuring designated areas for picking, stacking, and destacking.</p>
+						
+							<h3>4. Recording Positions:</h3>
+							<p>Precise sequences of positions were programmed into the Dobot robotic arm's control interface to enable the pick and place operations. The following positions were recorded:</p>
+						
+							<ul>
+								<li><strong>Home:</strong> The initial starting position.</li>
+								<li><strong>Above Pick:</strong> Positioned above the object to be picked.</li>
+								<li><strong>At Pick:</strong> The location where the gripper grasped the object.</li>
+								<li><strong>Above Pick:</strong> Returning to the above pick position.</li>
+								<li><strong>Above Stacking:</strong> Positioned above the stacked objects.</li>
+								<li><strong>At Stack:</strong> The location where the gripper placed objects, creating a stack.</li>
+								<li><strong>Above Stacking:</strong> Returning to the above stacking position.</li>
+								<li><strong>Above Destack:</strong> Positioned above the stack to destack objects.</li>
+								<li><strong>At Destack:</strong> The location where the gripper lifted a single object from the stack.</li>
+								<li><strong>Above Destack:</strong> Returning to the above destack position.</li>
+								<li><strong>Home:</strong> Returning to the initial starting position.</li>
+							</ul>
+						
+							<p>By executing these precise movements, the Dobot robotic arm effectively performed complex tasks, including picking objects, stacking them, and carefully destacking one object at a time. This project highlighted the Dobot robotic arm's versatility and precision in handling a range of tasks, making it a valuable tool across various applications.</p>
+							<p>Click the <a href="https://youtube.com/shorts/r0qtjdLKHMc"><span style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); font-weight: bold;">Youtube</span></a> logo for this project video.</p>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; KirthikRoshanNagaraj. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Predict the rating for a User / Item pair using Jaccard Similarity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div style="display: flex; justify-content: center; align-items: center;">
+					<h1><a href="index.html" class="title">Projects</a></h1>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Predict the rating for a User / Item pair using Jaccard Similarity</h1>
+							<p><em>Oct 2022 - Dec 2022</em></p>
+    <p><em>Arizona State University, Tempe, Arizona</em></p>
+							<span class="image fit"><img src="egrmain.png" alt="" /></span>
+							<h2>Introduction</h2>
+							<p>The objective is to predict user ratings for new books they read in the future, using various Machine Learning Algorithms, including Linear Regression, Logistic Regression, Bag of Words, and Jaccard Similarity. The investigation aims to determine which machine learning approach provides better accuracy and Mean Square Error for predicting user ratings based on their previous ratings and reviews of books.</p>
+
+							<h2>Analysis</h2>
+							<h3>Data Exploration</h3>
+							<ul>
+    							<li>Checked and removed null/empty values from the data.</li>
+    							<li>Encoded user_id and book_id from hashed strings to integers.</li>
+    							<li>Removed the primary key "review_id" as it has no correlation with the rating.</li>
+    							<li>Removed timestamp fields "date_added," "date_read_at," and "started_at" as they are not useful.</li>
+    							<li>Eliminated fields "n_votes" and "n_comments" as they were mostly null/empty.</li>
+    							<li>Conducted data visualization, showing rating distribution on a bar chart.</li>
+							</ul>
+
+<h2>Algorithms and Techniques</h2>
+
+<h3>Jaccard Similarity</h3>
+<ul>
+    <li>Used to compute similarity between two objects, such as text documents.</li>
+    <li>Commonly used in data science applications for text mining, e-commerce, and recommendation systems.</li>
+    <li>Implemented for predicting ratings based on user-item pairs.</li>
+</ul>
+
+<h3>Linear Regression</h3>
+<ul>
+    <li>Used to predict a variable's value based on another variable.</li>
+    <li>Estimates coefficients of a linear equation that best predicts the dependent variable's value.</li>
+    <li>Applied for predicting ratings.</li>
+</ul>
+
+<h3>Logistic Regression</h3>
+<ul>
+    <li>Used for classification and predictive analytics.</li>
+    <li>Estimates the probability of an event occurring based on independent variables.</li>
+    <li>Applied for predicting binary outcomes, such as voting.</li>
+</ul>
+
+<h3>Bag of Words</h3>
+<ul>
+    <li>Represents text by measuring the presence of known words in a document.</li>
+    <li>Involves a vocabulary of words and a measure of word presence.</li>
+    <li>Applied for predicting ratings based on review text.</li>
+</ul>
+
+<h2>Implementation</h2>
+
+<h3>Bag of Words Approach</h3>
+<ul>
+    <li>Predicted ratings using the top 1000 most frequent words in review text.</li>
+    <li>Generated a strength matrix with integer values for each data entry.</li>
+    <li>Split the dataset into 90% training and 10% testing for Linear and Logistic regression.</li>
+</ul>
+
+<h3>Jaccard Similarity</h3>
+<ul>
+    <li>Used a similarity-based approach to predict ratings.</li>
+    <li>Compared user/item pairs to previously rated items to generate similarity scores.</li>
+    <li>Considered previous user ratings to predict ratings for new items.</li>
+</ul>
+
+<h2>Results</h2>
+
+<h3>Metric: Mean Square Error (MSE)</h3>
+<ul>
+    <li>Bag of Words with Linear Regression: MSE = 1.575</li>
+    <li>Bag of Words with Logistic Regression: Accuracy = 45.5%</li>
+    <li>Jaccard Similarity: MSE = 1.837</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Jaccard Similarity outperformed the Bag of Words approach in predicting ratings. This machine learning model can be adapted for predicting hotel review ratings or providing product recommendations based on user ratings and purchase patterns.</p>
+								<p>Check out the project here <a href="https://github.com/KirthikRoshan/Predict-the-rating-for-a-User-Item-pair-using-Jaccard-Similarity">GitHub</a> for code.</p>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; KirthikRoshanNagaraj. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

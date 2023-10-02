@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Intelligent Vehicle Accident Detection System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div style="display: flex; justify-content: center; align-items: center;">
+					<h1><a href="index.html" class="title">Projects</a></h1>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Intelligent Vehicle Accident Detection System</h1>
+							<p><em>January 2021 - April 2021</em></p>
+    <p><em>Kumaraguru College of Technology, Coimbatore, Tamil Nadu</em></p>
+							<span class="image fit"><img src="Vehicle.jpg" alt="" /></span>
+							<p>The Vehicle Tracking System (VTS) enhances security, while the Accident Alert System adds swift accident response. Utilizing GPS, it empowers real-time monitoring and historical tracking. The discreet hardware aids recovery and accident location. This project prioritizes timely alerts, affordability, and accessibility.</p>
+							<h3>Parts list:</h3>
+								Arduino Uno<br />
+								GPS module<br />
+								GSM module<br />
+								Gyroscope sensor<br />								
+								<h3>Working Methodology</h3>
+								<span class="image"><img src="Picture3.jpg" alt="" /></span>
+								<p>Before delving into the operational procedure, let's gain a quick understanding of the project's flow. Consider an accident scenario where the gyroscopic sensor detects abnormalities promptly. Within seconds, the gyroscopic sensor sends signals to the microcontroller (Arduino in our case). The Arduino waits for the victim to deactivate the device manually, preventing false alarms in non-fatal accidents. This manual intervention window is time-bound. After detecting no user input, the Arduino initiates alerts to pre-programmed numbers. Emergency contacts then receive accurate geographical coordinates, enabling them to notify rescue teams promptly. This approach aims to significantly reduce casualties resulting from road accidents.</p>
+								<h3>Work Flow</h3>
+								
+								<p>Upon an accident, the gyroscopic sensor becomes active. This sensor operates based on the conservation of angular momentum, utilizing a spinning rotor mounted on a gimbal system. Two gimbals are employed to provide the rotor with three degrees of freedom, ensuring it maintains its orientation. Following the gyroscope's input, the GPS sensor engages. GPS receivers, commonly used in smartphones, fleet management systems, and military applications, determine location by receiving signals from a constellation of satellites. Trilateration, involving signalsfrom multiple satellites, calculates accurate user positions in three dimensions (latitude, longitude, and altitude).<br /><br /> <span class="image"><img src="Picture2.jpg" alt="" /></span><br /><br />The GPS receiver generates NMEA (National Marine Electronics Association) string format output, including parameters like longitude, latitude, altitude, and time. This output, transmitted serially via the Tx pin, serves as valuable location data.
+									Once precise geographical coordinates are acquired, the GSM module becomes operational. GSM (Global System for Mobile communication) employs hexagonal cells divided across a geographical area. Base stations situated within cells consist of transceivers and antennas. 
+									<br /><br />GSM combines TDMA (Time Division Multiple Access), FDMA (Frequency Division Multiple Access), and frequency hopping. Security features ensure communication
+									confidentiality and subscriber secrecy. The GSM modem, activated by an SMS command, relays data to the microcontroller. When the "STOP" command is executed, an output at the microcontroller is triggered, disabling the ignition switch. Alerts are sent via telephony servers, covering both voice calls and text messages across different carriers and service providers.</p>								
+								<h3>Real Time Results</h3>
+								<p>Successful transmission of emergency alerts via messages, including precise geographical coordinates of the accident location, to the pre-programmed number.</p>
+								<span class="image"><img src="Picture4.jpg" alt="" /></span>
+								<p>Successful initiation of emergency alerts via phone call, following accurate determination of the accident location, to the pre-programmed number.</p>
+								<span class="image"><img src="Picture5.jpg" alt="" /></span>
+								<h3>Conclusion</h3>
+								<p>In this report, we have presented the prototype of an automatic accident detection system. Looking ahead, this device holds potential for countering vehicle thefts. The remarkable accuracy of the tracking system positions this prototype as a prospective model for identifying individuals involved in criminal activities. <br />Furthermore, integration with emergency services and collaboration with local governments could expedite rescue operations, ensuring swift response to accident scenes. Our aspiration is to transition this system from prototype to real-world application in the near future.<br />The proposed accident alert system, as outlined in this report, addresses the critical goal of minimizing fatalities in unavoidable accidents. By immediately alerting emergency responders, the system enhances the chances of timely medical attention and intervention. Particularly valuable in remote and late-night accidents, this invention serves as a lifeline in otherwise perilous situations.<br />The integration of vehicle tracking and accident alert functionalities is poised to play a significant role in the future's daily lives, contributing to enhanced safety standards and faster emergency response times.<br /><br /></p>
+								<p>Check out the project and code here <a href="https://github.com/KirthikRoshan/INTELLIGENT_VEHICLE_ACCIDENT_DETECTION_SYSTEM">GitHub</a> for code.</p>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; KirthikRoshanNagaraj. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Biofeedback device that provides real-time feedback</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<div style="display: flex; justify-content: center; align-items: center;">
+				<h1><a href="index.html" class="title">Projects</a></h1>
+			</div>
+							
+		</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Biofeedback Device for People with Parkinson's Disease</h1>
+							<p><em>January 2023 - April 2023</em></p>
+    <p><em>Arizona State University, Tempe, Arizona</em></p>
+							<span class="image fit"><img src="555merged.jpg" alt="" /></span>
+							<h3>INTRODUCTION</h3>
+							<p>
+								Parkinson's disease, a widespread neurodegenerative disorder, diminishes dopamine production, leading to various motor, cognitive, and psychological symptoms. Commonly, patients experience tremors, rigidity, and bradykinesia. Yet, speech and vocal impairments affect 89% of individuals, causing issues like hoarseness and reduced volume, impacting communication and social isolation. Speech therapy and baseline examinations aid communication preservation, but motor system issues, sensory processing, and volume control challenges contribute to speech problems. Beyond speech, Parkinson's brings a heightened risk of fractures, strokes, cancer, diabetes, and depression, with approximately one million cases in the U.S. annually, potentially more worldwide.
+							</p>
+							<p>
+								This project explores Parkinson's impact on speech and vocal abilities, strategies for communication preservation, and factors contributing to speech problems. We also discuss interventions to improve communication for those with Parkinson's, aiming to enhance their quality of life.
+							</p>
+						
+							<h3>PROPOSED APPROACH</h3>
+							<p>
+								We propose a concealed vest model for our device, ensuring discreet integration on the vest's interior surface. The device's housing is designed for easy removal during washing, and the vest's lightweight material prevents discomfort from added weight.
+							</p>
+							<p>
+								The device components, including the vibrotactile feedback system, battery management system, battery, microphone, and controller, are positioned atop the collarbone. The collarbone microphone captures vocal intensity, while the vibrotactile sensor offers feedback accordingly.
+							</p>
+							<p>
+								Users can conveniently adjust settings through clothing, with accessible threshold and vibration strength buttons. The device housing accommodates various battery sizes and facilitates easy recharging. An additional microphone is available if needed. Our design prioritizes user-friendliness and minimal disturbance, offering vests in various sizes with adjustable straps for comfort and adaptability.
+							</p>
+							<span class="image fit"><img src="poster.jpg" alt="" /></span>
+						
+							<h3>IMPLEMENTATION SECTION</h3>
+							<p>
+								The device comprises two microphones—one for user voice and another for ambient noise—controlled by a Qt Py RP 2040 microcontroller. User microphone gain is set low to capture nearby sounds and avoid ambient noise. Background noise is considered negligible but can be further reduced with a high-resolution bone conduction microphone positioned atop the collarbone. Auto-gain microphones for ambient noise adjust sensitivity based on distance.
+							</p>
+							<p>
+								The device initiates background noise capture upon activation and uses it to provide feedback on the user's voice level. Feedback logic defines three voice level states (high, normal, low) and two background noise states (noise, no noise). Feedback varies accordingly, providing continuous vibrotactile feedback for low user voice volume, continuous feedback for normal voice with background noise, and intermittent feedback for high user voice volume without ambient noise. No feedback is given for high user voice volume with background noise.
+							</p>
+							<p>
+								Microphone signals are sampled and filtered with a low-pass filter to avoid false triggers from high-frequency sounds or sudden signal changes.
+							</p>
+						
+							<h3>CONCLUSION</h3>
+							<p>
+								Supervision during speech exercises enhances voice modulation for individuals with Neuro vocal disorders. Our device, more than an assistive tool, promotes self-regulation and user empowerment. We limit feedback stages to three to encourage device reliance and minimize user annoyance. The device's accuracy can be enhanced by employing a highly sensitive bone conduction microphone for the user and a high-gain microphone for ambient noise.
+							</p>
+								<p>Check out the project here <a href="https://github.com/thulsonASU/NeurAidBeetlePrototype">GitHub</a> for code.</p>
+								<p>Click the <a href="https://youtu.be/tNjcQhkGpjM?si=18UDeMEVy486rVGh"><span style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255); font-weight: bold;">Youtube</span></a> logo for this project video.</p>
+
+								
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; KirthikRoshanNagaraj. All rights reserved.</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
